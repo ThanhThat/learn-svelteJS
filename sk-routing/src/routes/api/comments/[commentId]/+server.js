@@ -25,6 +25,7 @@ export async function PATCH(requestEvent) {
 
 	const comment = comments.find((comment) => comment.id === parseInt(commentId));
 
+	// comment.text = text;
 	comment.text = text;
 
 	return json(comment);
